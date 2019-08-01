@@ -42,5 +42,4 @@ v. `git push -u origin --all` to push all the code in the remote repo
 
 Note that in the **Deploy stage Deploy job** some outputs have been created. Keep them for the next steps.
 
-[not useful in this moment]
-- in _Project Settings_ -> _Service Connections_ -> _+ New Service Connection_, select **Docker Registry** to create connection for the Azure Container Registry (this is created with the IaC pipeline <add link>)
+Coming soon: script to delete the cluster and other related resources when you no more need those.
