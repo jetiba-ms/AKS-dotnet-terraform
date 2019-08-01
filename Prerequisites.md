@@ -34,5 +34,7 @@ v. `git push -u origin --all` to push all the code in the remote repo
 - TF_STG_NAME = storage name (see A.2)
 7. Run the build, once it will finished you will have the following lists of resources deployed on Azure: an AKS cluster, an ACR, a virtual network, an Event Hub and its Namespace, an Azure Storage
 
+Note that in the **Deploy stage Deploy job** some outputs have been created. Keep them for the next steps.
+
 [not useful in this moment]
 - in _Project Settings_ -> _Service Connections_ -> _+ New Service Connection_, select **Docker Registry** to create connection for the Azure Container Registry (this is created with the IaC pipeline <add link>)
