@@ -1,3 +1,9 @@
+
+During this phase you will prepare the environment for deploying your containerized applications, using Terraform to managed the infrastructure and create Azure resources.
+The following steps are required just once, in a initial phase of the project.
+
+After, you can modify the infrastructure, adding or deleting resources definition in the `main.tf` file. Terraform keeps status in a blob storage, checks what resources are already created on Azure, and applies the changes that have been made.
+
 0 - First of all, clone or download the code from the following link <**_TODO_**: add link>
 
 A - On Azure Subscription:
