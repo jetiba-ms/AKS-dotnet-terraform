@@ -14,3 +14,9 @@ A - On Azure Devops:
 7. Do again steps 4 for **messagesenderapi** and in the step 5 add all the variables, except STG_NAME and STG_CONTAINER_NAME
 
 Note that, unfortunately, at the moment it isn't possible to automatically take the outputs of a pipeline in one repo to a pipeline in another repo. It is not the best, but it is important to keep applications repo and pipelines separated from the infrastructure repo and pipeline, due to the fact that they have different update and life cycles.
+
+B - On your development machine:
+1. Check the correct running of the applications in the AKS cluster with the command `kubectl get pods -n arch-aks-sb-dotnet` to see the pods created and if they are in execution
+2. `kubectl get service -n arch-aks-sb-dotnet` to see the external IP of the services to send new messages to the event hub and check if everything is working well
+3. Copy the IP, open Postman and send an HTTP POST to `http://<IP address>/api/value`s with as a body something like `{"values": "my-message-here"}`
+4. In the command prompt run `kubectl logs -f <pod-name> -n arch-aks-sb-dotnet` and see the message processed 
