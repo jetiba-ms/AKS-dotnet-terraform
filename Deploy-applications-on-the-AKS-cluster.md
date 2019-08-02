@@ -6,8 +6,8 @@ A - On Azure Devops:
 5. Before to proceed with the run of the build, you have to check the file and setup variables (from outputs resulted in the point B.6 of the **Prerequirements and Infrastructure deployment** chapter, as per the following list:
 - AKS_CLUSTER_NAME
 - AKS_CLUSTER_RG
+- ACR_NAME
 - EH_NS_NAME
-- EH_NS_RG
 - STG_NAME
 - STG_CONTAINER_NAME
 Note that, unfortunately, at the moment it isn't possible to automatically take the outputs of a pipeline in one repo to a pipeline in another repo. It is not the best, but it is important to keep applications repo and pipelines separated from the infrastructure repo and pipeline, due to the fact that they have different update and life cycles.
