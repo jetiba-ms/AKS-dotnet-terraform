@@ -17,6 +17,9 @@ Note that, unfortunately, at the moment it isn't possible to automatically take 
 
 B - On your development machine:
 1. Check the correct running of the applications in the AKS cluster with the command `kubectl get pods -n arch-aks-sb-dotnet` to see the pods created and if they are in execution
-2. `kubectl get service -n arch-aks-sb-dotnet` to see the external IP of the services to send new messages to the event hub and check if everything is working well
-3. Copy the IP, open Postman and send an HTTP POST to `http://<IP address>/api/value`s with as a body something like `{"values": "my-message-here"}`
+![cmd-pod-img.jpg](/.attachments/cmd-pod-img-33fc4901-c007-4393-91dc-60d504c25b77.jpg)
+2. `kubectl get service -n arch-aks-sb-dotnet` to see the external IP of the msgsenderapi services to send new messages to the event hub and check if everything is working well
+![cmd-ip-img.jpg](/.attachments/cmd-ip-img-d868916d-7e21-4d38-9194-118ac5761354.jpg)
+3. Copy the IP, open Postman and send an HTTP POST to `http://<IP address>/api/value`s with as a body something like `{"values": "my-message-here"}`, if it is working well it returns **200 OK** response
 4. In the command prompt run `kubectl logs -f <pod-name> -n arch-aks-sb-dotnet` and see the message processed 
+![msgproc-img.jpg](/.attachments/msgproc-img-65471a5d-ac67-44cc-ad8c-06e254e7ded9.jpg)
