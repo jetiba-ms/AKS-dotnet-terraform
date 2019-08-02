@@ -40,6 +40,15 @@ v. `git push -u origin --all` to push all the code in the remote repo
 - TF_STG_NAME = storage name (see A.2)
 7. Run the build, once it will finished you will have the following lists of resources deployed on Azure: an AKS cluster, an ACR, a virtual network, an Event Hub and its Namespace, an Azure Storage
 
+C - On Azure Subscription:
+1. Go in the Resource Group that has been created from the previous pipeline, and select the ACR resource
+2. In the options panel, select _Access Control (IAM)_ -> _Add_ -> _Add role assignment_ and fill the form in the tab on the right as per the image below (changing the name of SP with yours)
+![sp-img.jpg](/.attachments/sp-img-4aef24c4-7e69-4194-a6f9-7ce3263e7755.jpg)
+**WARNING**: you have to complete these steps manually due to some security considerations on how to manage Service Principals. In fact, if you want to assign this role programmatically, inside the Terraform script, you have to make the SP owner of the entire subscription, and this isn't suggested in term of security and roles segmentation. The best practice in these terms is to create 2 different SPs:
+- the first as a contributor of the entire subscription, and used to create the infrastructure
+- the second for the cluster, with the roles that are suggested in [the documentation](https://docs.microsoft.com/en-us/azure/aks/best-practices)
+In order to keep things easy, in this project we used one Service Principal for everything (at least in this previous version).
+
 Note that in the **Deploy stage Deploy job** some outputs have been created. Keep them for the next steps.
 
 Coming soon: script to delete the cluster and other related resources when you no more need those.
