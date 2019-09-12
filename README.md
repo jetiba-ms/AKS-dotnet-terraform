@@ -17,7 +17,8 @@ This tutorial is though as a quickstart guideline for concepts like **Infrastruc
 If you want you can also execute the steps for a manual configuration, following the file marked as [Manual], in this order:
 1. [Create AKS cluster](https://github.com/jetiba-ms/AKS-dotnet-terraform/blob/wikiMaster/%5BManual%5D%20Create%20AKS%20cluster.md)
 2. [Registry setup](https://github.com/jetiba-ms/AKS-dotnet-terraform/blob/wikiMaster/%5BManual%5D%20Registry%20Setup.md)
-3. [Deploy images on AKS using Helm](https://github.com/jetiba-ms/AKS-dotnet-terraform/blob/wikiMaster/%5BManual%5D%20Deploy%20images%20on%20AKS%20using%20Helm.md)
+3. [Configure OSBA](https://github.com/jetiba-ms/AKS-dotnet-terraform/blob/wikiMaster/%5BManual%5D%20Configure%20OSBA.md)
+4. [Deploy images on AKS using Helm](https://github.com/jetiba-ms/AKS-dotnet-terraform/blob/wikiMaster/%5BManual%5D%20Deploy%20images%20on%20AKS%20using%20Helm.md)
 
 It is still a work-in-progress project, some topics that will come are:
 - cluster monitoring
