@@ -4,7 +4,7 @@ The following steps are required just once, in a initial phase of the project.
 
 After, you can modify the infrastructure, adding or deleting resources definition in the `main.tf` file. Terraform keeps status in a blob storage, checks what resources are already created on Azure, and applies the changes that have been made.
 
-0 - First of all, clone or download the code from the following link <**_TODO_**: add link>
+0 - First of all, clone or download the code from the following link [AKS-dotnet-terraform-iac](https://github.com/jetiba-ms/AKS-dotnet-terraform-iac)
 
 A - On Azure Subscription:
 1. Create an Azure Service Principal `az ad sp create-for-rbac -n <sp_name>`, it returns the follow result, store it:
