@@ -27,11 +27,17 @@ B - On Azure DevOps:
 2. Crate a new repo, name it `iac`
 3. Create **Service Connections** in Azure DevOps Project Settings: in _Project Settings_ -> _Service Connections_ -> _+ New Service Connection_, select **Azure Resource Manager** and fill the form with the details of Service Principal created at A.1.
 4. Go to the folder where you clone/unzip the project at the point 0, open here a command prompt and, go to the `iac` folder and run the following command:
-i. `git init` to initialize local repo
-ii. `git add .` to add everything to the git repo
-iii. `git commit -m "<your commit message>"` to commit changes
-iv. `git remote add origin <Azure DevOps repo url>` to define the remote repo
-v. `git push -u origin --all` to push all the code in the remote repo
+
+    i. `git init` to initialize local repo
+
+    ii. `git add .` to add everything to the git repo
+
+    iii. `git commit -m "<your commit message>"` to commit changes
+
+    iv. `git remote add origin <Azure DevOps repo url>` to define the remote repo
+
+    v. `git push -u origin --all` to push all the code in the remote repo
+
 5. Check in the **Repos** area of the Azure DevOps site that the code is committed correctly
 6. Click on **Set up build** button on the right top of the window, it automatically selects the `azure-pipelines.yml` file from the repo and sets up the build. 
 **WARNING**: at the moment of writing (Aug 2019) there is a bug that cannot permit to add variables during this phase, so if you don't cancel the first build it will fail. Cancel the first build, click on the 3 dots in the right top and select **Edit pipeline**. You will see a button at the right top **Variables**, click on it and add the following variables:
