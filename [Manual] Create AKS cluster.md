@@ -17,6 +17,10 @@ For example, you can use `--scope /subscriptions/<subscription_id>` and `--role 
 ### Cluster creation 
 
 `az aks create --resource-group <rg_name> --name <cluster_name> --node-count 1 --enable-addons monitoring,http_application_routing --generate-ssh-keys --service-principal <appId> --client-secret <password>` 
+
+In particular, the addons enabled here are
+- **monitoring** to enable the collection of logs in Azure Monitor
+- **http_application-routing** creates an ingress controller and an external DNS controller in order to make application deployed in the cluser easy to access
 	
 ### Install kubectl locally 
 
