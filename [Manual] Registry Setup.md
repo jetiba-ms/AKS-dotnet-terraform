@@ -1,6 +1,6 @@
 ## Setup Azure Container Registry for Helm Charts
 
-Create Azure Container Registry `az acr create -n <acr_name> -g <rg_name> --sku <basic-standard-premium>`
+Create Azure Container Registry `az acr create -n <acr_name> -g <rg_name> --sku <basic-standard-premium> --admin-enabled true`
 
 Push image from local to the registry
 1. Login to ACR `az acr login --name <acr_name>`
