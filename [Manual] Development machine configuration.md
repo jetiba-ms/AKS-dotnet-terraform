@@ -7,4 +7,5 @@
 
 
 ## Other requirements
-An Azure Subscription is required in order to complete the hands-on
+- An Azure Subscription is required in order to complete the hands-on
+- Clone the [msgprocessor](https://github.com/jetiba-ms/AKS-dotnet-terraform-msgprocessor) and the [msgsenderapi](https://github.com/jetiba-ms/AKS-dotnet-terraform-msgsenderapi) repo
