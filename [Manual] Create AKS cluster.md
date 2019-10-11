@@ -16,7 +16,7 @@ For example, you can use `--scope /subscriptions/<subscription_id>` and `--role 
   
 ### Cluster creation 
 
-`az aks create --resource-group <rg_name> --name <cluster_name> --node-count 1 --enable-addons monitoring,http_application_routing --generate-ssh-keys`
+`az aks create --resource-group <rg_name> --name <cluster_name> --node-count 1 --enable-addons monitoring,http_application_routing --generate-ssh-keys --service-principal <appId> --client-secret <password>` 
 	
 ### Install kubectl locally 
 
