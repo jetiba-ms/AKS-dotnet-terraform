@@ -3,7 +3,10 @@
 Create Azure Container Registry `az acr create -n <acr_name> -g <rg_name> --sku <basic-standard-premium> --admin-enabled true`
 
 Push image from local to the registry
-1. Login to ACR `az acr login --name <acr_name>`
+1. Login to ACR `az acr login --name <acr_name>` or `docker login <acr_loginserver>`, this will promt you for the password, that you can find the password to access in the Azure Portal, as in the image below
+
+![acr_psw.jpg](/.attachments/acr_psw.jpg)
+
 2. Build the image locally `docker build -t <acr_name>.azurecr.io/<image_name>:<tag> .`
 3. Push the image `docker push <acr_name>.azurecr.io/<image_name>:<tag>`
 
