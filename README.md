@@ -15,6 +15,7 @@ There are other 3 repos:
 This tutorial is though as a quickstart guideline for concepts like **Infrastructure-as-Code** and **CI/CD with Kubernetes**.
 
 If you want you can also execute the steps for a manual configuration, following the file marked as [Manual], in this order:
+0. [Configure and install all required tools on the development machine](https://github.com/jetiba-ms/AKS-dotnet-terraform/blob/wikiMaster/%5BManual%5D%20Development%20machine%20configuration.md)
 1. [Create AKS cluster](https://github.com/jetiba-ms/AKS-dotnet-terraform/blob/wikiMaster/%5BManual%5D%20Create%20AKS%20cluster.md)
 2. [Registry setup](https://github.com/jetiba-ms/AKS-dotnet-terraform/blob/wikiMaster/%5BManual%5D%20Registry%20Setup.md)
 3. [Configure OSBA](https://github.com/jetiba-ms/AKS-dotnet-terraform/blob/wikiMaster/%5BManual%5D%20Configure%20OSBA.md)
