@@ -53,3 +53,7 @@ In particular, the addons enabled here are
 ### Create local tunnel on localhost to access the remote cluster dashboard 
 
 `az aks browse --resource-group <rg_name> --name <cluster_name>`
+
+### Create a new namespace for the applications deployment
+
+`kubectl create namespace <namespace_name>`
